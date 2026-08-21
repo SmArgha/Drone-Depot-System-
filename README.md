@@ -91,7 +91,8 @@ The program compares the results of the greedy and globally optimal approaches.
 
 The program reads drone information from:
 
-```text
+text
+
 # SkyRoute-II
 
 ## Project Overview
@@ -120,7 +121,7 @@ The program loads drone information and delivery tasks from a text file and allo
 
 The Depot maintains a linked list of drones ordered by ascending drone ID.
 
-```text
+text
 Head
  ↓
 Drone 87 → Drone 102 → Drone 105 → Drone 109 → ...
