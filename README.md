@@ -92,4 +92,70 @@ The program compares the results of the greedy and globally optimal approaches.
 The program reads drone information from:
 
 ```text
+# SkyRoute-II
+
+## Project Overview
+
+SkyRoute-II is a C++ drone-fleet management and logistics simulation. The system manages a fleet of autonomous drones and demonstrates the use of linked lists, queues, stacks, binary trees, templates, inheritance, and polymorphism.
+
+The program loads drone information and delivery tasks from a text file and allows the user to manage the fleet through a menu-driven interface.
+
+## Main Features
+
+- Add and remove drones
+- Manage drones using a sorted linked list
+- Dispatch drones using a FIFO queue
+- Manage maintenance/recovery using a LIFO stack
+- Organize drones spatially using a binary search tree
+- Search drones by name or ID
+- Sort drones by name, ID, or position
+- Randomize drone order
+- Demonstrate template-based programming with `DroneManager<T>`
+- Demonstrate inheritance and polymorphism using `AdvancedDrone`
+- Record user-generated changes in output text files
+
+## Data Structures
+
+### Linked List
+
+The Depot maintains a linked list of drones ordered by ascending drone ID.
+
+```text
+Head
+ ↓
+Drone 87 → Drone 102 → Drone 105 → Drone 109 → ...
+
+---
 Drones.txt
+## Text Files and Generated Output
+
+The project uses several text files to store input data and record
+different states of the drone depot.
+
+### Drones.txt
+
+`Drones.txt` is the main input file for the program.
+
+It contains the initial information for the drones loaded into the Depot.
+The program reads the first 10 drones from this file. If more than 10
+drones are present, the additional drones are ignored.
+
+Each drone contains:
+
+- Drone name
+- Drone ID
+- Initial position
+- Five task names
+- Five task positions
+
+Example:
+
+```text
+Alpha
+101
+50 80
+Grocery 10 20
+Electronics 15 25
+Medical 5 30
+Book 3 25
+Skin_Care 7 29
